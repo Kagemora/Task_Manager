@@ -35,8 +35,14 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+
+    //WorkManager
+    implementation(libs.androidx.work.runtime.ktx)
+
+    //thread
+    implementation(libs.kotlinx.coroutines.core)
+
+    //test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
