@@ -5,7 +5,7 @@ agp = "8.5.0"
 hiltAndroidCompiler = "2.51.1"
 
 #kotlin
-kotlin = "1.9.25"
+kotlin = "2.0.10"
 coreKtx = "1.13.1"
 appcompat = "1.7.0"
 
@@ -49,7 +49,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 
 #inject
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidCompiler" }
-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+
 
 #test
 junit = { group = "junit", name = "junit", version.ref = "junit" }

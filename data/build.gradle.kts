@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.devtools.ksp")
-    id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
 }
 
@@ -45,7 +44,7 @@ dependencies {
 
     //cache
     implementation (libs.androidx.room.runtime)
-    ksp (libs.room.compiler)
+    ksp(libs.room.compiler)
     implementation(libs.androidx.room.ktx)
 
     //thread
@@ -54,7 +53,7 @@ dependencies {
 
     //inject
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
+    ksp(libs.hilt.compiler)
 
     //test
     testImplementation(libs.junit)
