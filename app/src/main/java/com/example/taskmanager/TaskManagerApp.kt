@@ -1,4 +1,11 @@
 package com.example.taskmanager
 
-class TaskManagerApp {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class TaskManagerApp : Application(){
+
+    //TODO workManager
+
 }
