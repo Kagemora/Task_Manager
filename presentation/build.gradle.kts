@@ -57,6 +57,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.fragment.ktx)
 
+
     //mvvm
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
@@ -67,6 +68,7 @@ dependencies {
 
     //inject
     implementation(libs.hilt.android)
+    implementation(libs.androidx.legacy.support.v4)
     ksp(libs.hilt.compiler)
 
     //nav
@@ -78,6 +80,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    //Permissions
+    //memory
     implementation(libs.dexter)
 }

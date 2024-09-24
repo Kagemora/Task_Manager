@@ -1,11 +1,9 @@
-package com.example.presentation
+package com.example.taskmanager
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.presentation.databinding.ActivityAppBinding
+import com.example.taskmanager.databinding.ActivityAppBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
