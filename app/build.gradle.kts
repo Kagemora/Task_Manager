@@ -54,9 +54,9 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.material)
     implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.activity)
     ksp(libs.hilt.compiler)
 
     //test

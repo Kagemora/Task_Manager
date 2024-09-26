@@ -3,26 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/ListTaskFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.taskmanager.FirstFragment"
+        android:id="@+id/ListTaskFragment"
+        android:name="com.example.presentation.listtask.ListTaskFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
+        tools:layout="@layout/fragment_list_task" >
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/TaskFragment" />
+        <action
+            android:id="@+id/action_ListTaskFragment_to_SettingFragment"
+            app:destination="@id/SettingFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.taskmanager.SecondFragment"
+        android:id="@+id/TaskFragment"
+        android:name="com.example.presentation.task.TaskFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
+        tools:layout="@layout/fragment_task" >
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/ListTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingFragment"
+        android:name="com.example.presentation.setting.SettingFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_setting" >
+
+
+        <action
+            android:id="@+id/action_SettingFragment_to_ListTaskFragment"
+            app:destination="@id/ListTaskFragment" />
     </fragment>
 </navigation>

@@ -1,18 +1,18 @@
 package com.example.presentation.listtask
 
-import androidx.fragment.app.viewModels
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.example.presentation.R
+import com.example.presentation.databinding.FragmentListTaskBinding
+
 
 class ListTaskFragment : Fragment() {
+    private var _binding: FragmentListTaskBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = ListTaskFragment()
@@ -20,29 +20,22 @@ class ListTaskFragment : Fragment() {
 
     private val viewModel: ListTaskViewModel by viewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.myToolbar.inflateMenu(R.menu.menu_main)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_list_task, container, false)
+        _binding = FragmentListTaskBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val toolbar = view.findViewById<Toolbar>(R.id.toolbar)
-        (activity as? AppCompatActivity)?.setSupportActionBar(toolbar)
-
-        setHasOptionsMenu(true)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_main, menu)
-        super.onCreateOptionsMenu(menu, inflater)
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
