@@ -1,7 +1,6 @@
 package com.example.taskmanager
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.taskmanager.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint

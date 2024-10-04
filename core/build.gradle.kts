@@ -35,6 +35,11 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+
+    //ui
+    implementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
 
     //WorkManager
     implementation(libs.androidx.work.runtime.ktx)

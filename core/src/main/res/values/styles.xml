@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="taskThemeTextInputLayout">
+        <item name="cursorColor">@color/black</item>
+        <item name="hintTextColor">@color/blue</item>
+        <item name="boxStrokeColor">@color/blue</item>
+    </style>
+
+    <style name="taskThemeTextInputEditText">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHighlight">#C4E3ED</item>
+    </style>
+
+</resources>
