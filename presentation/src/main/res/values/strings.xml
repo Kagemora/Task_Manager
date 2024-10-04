@@ -2,4 +2,13 @@
     <string name="sort_add">Сортировка по дате добавления</string>
     <string name="sort_name">Сортировка по названию</string>
     <string name="settings">Общие настройки</string>
+    <string name="song_notification">Звук уведомления</string>
+    <string name="select_sound">Выбрать звук</string>
+    <string name="reset_settings">Сбросить настройки</string>
+    <string name="notification">Уведомления</string>
+    <string name="export_tasks">Экспортировать задачи</string>
+    <string name="import_tasks">Импортировать задачи</string>
+    <string name="data">Дата:</string>
+    <string name="time">Время:</string>
+    <string name="title">Заголовок:</string>
 </resources>

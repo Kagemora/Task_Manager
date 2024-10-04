@@ -8,8 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.presentation.R
 import com.example.presentation.databinding.FragmentListTaskBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ListTaskFragment : Fragment() {
     private var _binding: FragmentListTaskBinding? = null
     private val binding get() = _binding!!
