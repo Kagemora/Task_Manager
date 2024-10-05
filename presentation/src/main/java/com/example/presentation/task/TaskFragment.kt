@@ -7,10 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.presentation.R
+import com.example.presentation.databinding.FragmentTaskBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class TaskFragment : Fragment() {
+
+    private var _binding:FragmentTaskBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = TaskFragment()
@@ -28,7 +32,12 @@ class TaskFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_task, container, false)
+        _binding = FragmentTaskBinding.inflate(inflater,container,false)
+        return binding.root
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

@@ -9,7 +9,6 @@
 
     <style name="taskThemeTextInputEditText">
         <item name="android:paddingStart">10dp</item>
-        <item name="android:background">@android:color/transparent</item>
         <item name="android:textColorHighlight">#C4E3ED</item>
     </style>
 
