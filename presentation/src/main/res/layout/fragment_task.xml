@@ -71,6 +71,7 @@
             android:imeOptions="actionNext"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="0dp"
@@ -91,21 +92,21 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditTextDescription"
             style="@style/taskThemeTextInputEditText"
-            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="start"
             android:hint="@string/description" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:backgroundTint="@color/blue"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
         android:text="@string/add_task"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-    
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
