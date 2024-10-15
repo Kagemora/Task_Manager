@@ -36,11 +36,6 @@ android {
 
 dependencies {
 
-    //module
-    implementation(project(":core"))
-
-    implementation(libs.androidx.core.ktx)
-
     //inject
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)

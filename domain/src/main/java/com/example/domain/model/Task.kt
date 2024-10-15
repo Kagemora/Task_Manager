@@ -1,13 +1,13 @@
 package com.example.domain.model
 
 class Task(
-    val id: Int = UNSPECIFIED_ID,
-    val data: Long,
-    val time: Long,
+    var id: Int = UNSPECIFIED_ID,
+    var data: Long,
+    var time: Long,
     val title: String,
     val description: String,
-    val notification: Boolean = true,
-    val isCompleted: Boolean = false
+    var notification: Boolean = true,
+    var isCompleted: Boolean = false
 ) {
     companion object {
 
