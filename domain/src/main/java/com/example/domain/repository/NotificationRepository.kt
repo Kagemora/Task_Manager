@@ -1,5 +1,6 @@
 package com.example.domain.repository
 
+import com.example.domain.model.Result
 import kotlinx.coroutines.flow.Flow
 
 interface NotificationRepository {
@@ -8,6 +9,6 @@ interface NotificationRepository {
     fun isNotificationsEnabled(): Flow<Boolean>
 
     //установка звукового уведомления
-    suspend fun setNotificationSound(uri: String)
+    suspend fun setNotificationSound(uri: String): Result<Unit>
 
 }

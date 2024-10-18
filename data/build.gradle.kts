@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
+    kotlin("plugin.serialization")
 }
 
 android {
@@ -50,6 +51,9 @@ dependencies {
     //thread
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
+
+    //serialization
+    implementation(libs.kotlinx.serialization.json)
 
     //inject
     implementation(libs.hilt.android)

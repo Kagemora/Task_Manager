@@ -1,11 +1,11 @@
 package com.example.domain.repository
 
-import kotlinx.coroutines.flow.Flow
+import com.example.domain.model.Result
 
 interface SettingsRepository : NotificationRepository, TaskImportExportRepository {
 
     //сброс настроек
-    suspend fun resetSettings()
+    suspend fun resetSettings(): Result<Unit>
 
 
 }

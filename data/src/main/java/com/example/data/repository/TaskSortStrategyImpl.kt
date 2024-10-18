@@ -7,7 +7,8 @@ import javax.inject.Inject
 class TaskSortStrategyImpl @Inject constructor(
 
 ) : TaskSortStrategy{
-    override fun sort(tasks: List<Task>): List<Task> {
+    override fun sort(tasks: List<Task>): Result<List<Task>> {
         TODO("Not yet implemented")
     }
+
 }
